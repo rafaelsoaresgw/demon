@@ -66,17 +66,17 @@ function siteBase() {
   }
   if (window.__tier === 'low') lightReveal();
 
-  /* hero video: only after the page has loaded, only while on screen, sized for the device */
+  /* hero video: starts once the page has loaded and only plays while on screen */
   var video = one('video.photo'), hero = one('.hero');
   function startVideo() {
-    if (!video || window.__tier === 'low' || video.getAttribute('src')) return;
-    var small = window.__tier === 'mid' || window.innerWidth <= 900;
+    if (!video || window.__noVideo || video.getAttribute('src')) return;
+    video.muted = true; video.defaultMuted = true; video.loop = true; video.playsInline = true;
+    video.setAttribute('muted', ''); video.setAttribute('playsinline', '');
     video.addEventListener('playing', function () { video.classList.add('vready'); }, { once: true });
-    video.setAttribute('src', video.getAttribute(small ? 'data-sm' : 'data-lg'));
+    video.setAttribute('src', video.getAttribute('data-src'));
     var p = video.play(); if (p && p.catch) p.catch(function () {});
     if (IO && hero) new IO(function (es) {
-      if (!video.getAttribute('src')) return;
-      if (es[0].isIntersecting) { var r = video.play(); if (r && r.catch) r.catch(function () {}); } else video.pause();
+      if (es[0].isIntersecting && !window.__noVideo) { var r = video.play(); if (r && r.catch) r.catch(function () {}); } else video.pause();
     }).observe(hero);
   }
   function whenLoaded(fn) {
@@ -89,14 +89,11 @@ function siteBase() {
     var next = window.__tier === 'high' ? 'mid' : 'low';
     root.classList.remove('t-' + window.__tier); root.classList.add('t-' + next);
     window.__tier = next;
-    try { sessionStorage.setItem('perfTier', next); } catch (x) {}
-    if (next === 'low' && video && video.getAttribute('src')) {
-      video.classList.remove('vready'); video.pause();
-      setTimeout(function () { video.removeAttribute('src'); video.load(); }, 600);
-    }
+    try { sessionStorage.setItem('perfTier', 'mid'); } catch (x) {}
+    if (next === 'low' && video) { window.__noVideo = true; video.pause(); }
     if (window.__fx) window.__fx.demote(next);
   }
-  if (window.__tier !== 'low' && !/[?&]perf=/.test(location.search)) {
+  if ((window.__tier !== 'low' || !window.__noVideo) && !/[?&]perf=/.test(location.search)) {
     var until = 0, running = false, frames = 0, start = 0, last = 0, slow = 0;
     var tick = function (t) {
       var now = performance.now();
