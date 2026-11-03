@@ -4,66 +4,143 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Clínica de Estética Avançada Taisa Rissoli | Rio Claro, SP</title>
-<meta name="description" content="Clínica de Estética Avançada Taisa Rissoli em Rio Claro, SP. Tratamentos faciais e corporais: enzimas, toxina botulínica, fios de sustentação e celulite.">
-<link rel="stylesheet" href="css/style.css">
-<script>if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('pre');setTimeout(function(){document.documentElement.classList.remove('pre')},3000)}</script>
+<meta name="description" content="Realce a sua beleza com naturalidade na Clínica de Estética Avançada Taisa Rissoli, em Rio Claro, SP. Enzimas, toxina botulínica, fios de sustentação e tratamento de celulite. Agende sua avaliação.">
+<link rel="stylesheet" href="css/style.css?v=e8b05a7d97">
+<script>function tier() {
+  var d = document.documentElement, t = 'high';
+  try {
+    var q = /[?&]perf=(low|mid|high)/.exec(location.search), s = sessionStorage.getItem('perfTier');
+    var n = navigator, c = n.connection || {}, m = n.deviceMemory, h = n.hardwareConcurrency || 4, e = c.effectiveType || '';
+    if (c.saveData || /2g/.test(e) || (m && m <= 2) || (m && h <= 2) || matchMedia('(prefers-reduced-motion: reduce)').matches) t = 'low';
+    else if (e === '3g' || (m && m <= 4) || h <= 4 || (!m && matchMedia('(pointer: coarse)').matches)) t = 'mid';
+    if (s && (s === 'low' || t === 'high')) t = s;
+    if (q) t = q[1];
+  } catch (x) {}
+  d.classList.add('t-' + t);
+  window.__tier = t;
+  return t;
+}
+tier();
+(function () {
+  var d = document.documentElement, H = document.head, t = window.__tier;
+  if (location.protocol !== 'file:') ['google-sans-500', 'google-sans-400'].forEach(function (f) {
+    var l = document.createElement('link'); l.rel = 'preload'; l.as = 'font'; l.type = 'font/woff2'; l.crossOrigin = ''; l.href = 'fonts/' + f + '.woff2'; H.appendChild(l);
+  });
+  if (t === 'low') return;
+  d.classList.add('pre');
+  setTimeout(function () { d.classList.remove('pre'); }, 2500);
+  ["js/gsap.min.js?v=96c01b81f4", "js/ScrollTrigger.min.js?v=308219390e", "js/motion.js?v=aeafc4a701"].forEach(function (src) {
+    var s = document.createElement('script'); s.src = src; s.async = false;
+    s.onerror = function () { d.classList.remove('pre'); };
+    H.appendChild(s);
+  });
+})();
+</script>
+<link rel="preload" as="image" href="assets/hero-1000.webp?v=4f4a82705c" imagesrcset="assets/hero-1000.webp?v=4f4a82705c 1000w,assets/hero.webp?v=2ebf5b718c 1672w" imagesizes="(max-width:900px) 175vw,1100px" fetchpriority="high">
 </head>
 <body>
 <div class="prog" aria-hidden="true"></div>
+<a class="wpp" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><span class="wppt">Fale conosco</span><span class="wppc"><svg class="bi bi-whatsapp" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path></svg></span></a>
 <div class="root">
 <div class="page">
 
+<div class="cap ">
+<button type="button" class="capbg" tabindex="-1" aria-label="Fechar menu"></button>
+<div class="capi">
+<div class="capbar">
+<a class="caplogo" href="#top" aria-label="Clínica Taisa Rissoli, início"><svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M17 1.500c3.200 3.500 4.900 7 4.900 10.800 0 3.900-1.800 7.600-4.900 11-3.100-3.400-4.900-7.100-4.900-11 0-3.800 1.700-7.300 4.900-10.800z"></path><path d="M11.200 15.800C8 15 4.700 15 1.600 15.900c1 5.800 5.600 10.600 12 10.900 1.900.1 3.400-.5 3.400-3.500"></path><path d="M22.800 15.800c3.200-.8 6.500-.8 9.600.1-1 5.800-5.600 10.600-12 10.900-1.900.1-3.400-.5-3.400-3.500"></path></svg><span>Taisa Rissoli</span></a>
+<nav class="capl" aria-label="Principal">
+<a class="cur" href="#top" data-s="hero" aria-current="page">Início</a>
+<a href="#tratamentos" data-s="sv">Tratamentos</a>
+<a href="#why" data-s="why">Diferenciais</a>
+<a href="#bestsellers" data-s="best">Cuidados</a>
+</nav>
+<a class="capcta" href="https://wa.me/" target="_blank" rel="noopener">Agendar</a>
+<button type="button" class="captg" aria-expanded="false" aria-controls="capmenu" aria-label="Abrir menu"><i></i><i></i></button>
+</div>
+<nav class="capm" id="capmenu" aria-label="Menu">
+<a class="cur" href="#top" data-s="hero" aria-current="page">Início</a>
+<a href="#tratamentos" data-s="sv">Tratamentos</a>
+<a href="#why" data-s="why">Diferenciais</a>
+<a href="#bestsellers" data-s="best">Cuidados</a>
+</nav>
+</div>
+</div>
+
+
 <section class="hero" id="top">
 <div class="figure">
-<video class="photo" src="assets/73292.mp4" poster="assets/hero.webp" autoplay muted loop playsinline preload="auto" aria-label="Mulher de olhos fechados com uma moldura translúcida de análise sobre o rosto"></video>
+<div class="phw">
+<img class="photo" fetchpriority="high" decoding="async" width="1672" height="941" src="assets/hero.webp?v=2ebf5b718c" alt="Mulher de olhos fechados com uma moldura translúcida de análise sobre o rosto" srcset="assets/hero-1000.webp?v=4f4a82705c 1000w,assets/hero.webp?v=2ebf5b718c 1672w" sizes="(max-width:900px) 175vw,1100px">
+<video class="photo" data-lg="assets/hero-720.mp4?v=23ec3681d5" data-sm="assets/hero-480.mp4?v=7af027852d" muted loop playsinline preload="none" aria-hidden="true"></video>
+<span class="photo vfade" aria-hidden="true"></span>
 <span class="scan" aria-hidden="true"><i></i></span>
+</div>
 <div class="chip c1">
 <b>Rejuvenescimento</b>
 <span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9" rx="1.5"></rect><path d="M1.5 6h9M6 1.5v9"></path></svg>Com enzimas</span>
 </div>
 <div class="chip c2">
 <b>Toxina botulínica</b>
-<span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9" rx="1.5"></rect><path d="M1.5 6h9M6 1.5v9"></path></svg>Aplicação</span>
+<span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><rect x="1.5" y="1.5" width="9" height="9" rx="1.5"></rect><path d="M1.5 6h9M6 1.5v9"></path></svg>Expressão leve</span>
 </div>
 </div>
-
-<header class="nav">
-<a class="logo" href="#top" aria-label="Clínica Taisa Rissoli, início">
-<svg viewBox="0 0 34 30" fill="none" stroke="currentColor" stroke-width="1.800" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M17 1.500c3.200 3.500 4.900 7 4.900 10.800 0 3.900-1.800 7.600-4.900 11-3.100-3.400-4.900-7.100-4.900-11 0-3.800 1.700-7.300 4.900-10.800z"></path><path d="M11.200 15.800C8 15 4.700 15 1.600 15.900c1 5.800 5.600 10.600 12 10.900 1.900.1 3.400-.5 3.400-3.500"></path><path d="M22.800 15.800c3.200-.8 6.500-.8 9.600.1-1 5.800-5.600 10.600-12 10.900-1.900.1-3.400-.5-3.400-3.500"></path></svg>
-<span>Taisa Rissoli</span>
-</a>
-<nav class="links" aria-label="Principal">
-<a class="home" href="#top" aria-current="page">Início</a>
-<a class="m1" href="#understand">Tratamentos<svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3.500 5 6.500l3-3"></path></svg></a>
-<a class="m2" href="#why">Diferenciais</a>
-<a class="m3" href="#bestsellers">Cuidados</a>
-<a href="#about">Contato</a>
-</nav>
-<a class="dl" href="#about">Agendar</a>
-<a class="dlc" href="#about" aria-label="Agendar"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 5h5M5.500 3l2 2-2 2"></path></svg></a>
-</header>
 
 <div class="copy">
-<h1 class="h1"><span class="ln"><span class="li">Estética </span></span><span class="ln"><span class="li">avançada </span></span><span class="ln"><span class="li">em Rio Claro. </span></span></h1>
-<p class="lead">Tratamentos faciais e corporais na Clínica <br>de Estética Avançada Taisa Rissoli.</p>
+<h1 class="h1"><span class="ln"><span class="li">Sua melhor </span></span><span class="ln"><span class="li">versão começa </span></span><span class="ln"><span class="li">aqui. </span></span></h1>
+<p class="lead">Estética avançada em Rio Claro para realçar <br>a sua beleza, com toda a naturalidade.</p>
 <div class="cta">
-<a class="btn" href="#understand">Agendar avaliação</a>
-<a class="circ" href="#understand" aria-label="Agendar avaliação"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.500 3H9v4.500"></path></svg></a>
+<a class="btn" href="https://wa.me/" target="_blank" rel="noopener">Agendar minha avaliação</a>
+<a class="circ" href="https://wa.me/" target="_blank" rel="noopener" aria-label="Agendar minha avaliação"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.500 3H9v4.500"></path></svg></a>
 </div>
 </div>
 
 <dl class="stats">
 <div class="stat"><dt>Nota no Google</dt><dd>5,0</dd></div>
-<div class="stat"><dt>Avaliações no Google</dt><dd>3</dd></div>
+<div class="stat"><dt>Avaliações 5 estrelas</dt><dd>3</dd></div>
 <div class="stat"><dt>Rio Claro</dt><dd>SP</dd></div>
 </dl>
 </section>
 
+<section class="sv" id="tratamentos">
+<div class="svh">
+<h2 class="svt"><span class="ln"><span class="li">Tratamentos que realçam </span></span><span class="ln"><span class="li svg2">o melhor de você</span></span></h2>
+<p class="svp">Cada rosto é único. Por isso, o seu cuidado começa com uma avaliação feita só para você.</p>
+</div>
+<div class="svr">
+<div class="svk" tabindex="0" role="region" aria-label="Tratamentos, arraste para ver mais">
+<article class="svc">
+<img class="svi" loading="lazy" decoding="async" src="assets/enzimas.webp?v=413fa44af2" alt="" draggable="false">
+<h3 class="svl">Aplicação de enzimas</h3>
+<p class="svx">Os sinais do tempo incomodam? Nos protocolos de rejuvenescimento, as enzimas ajudam sua pele a recuperar o viço.</p>
+<a class="svb" href="https://wa.me/" target="_blank" rel="noopener" draggable="false" aria-label="Agendar: aplicação de enzimas"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.200 3H9v4.800"></path></svg></a>
+</article>
+<article class="svc on">
+<img class="svi" loading="lazy" decoding="async" src="assets/skin.webp?v=39ec9f097f" alt="" draggable="false" srcset="assets/skin-720.webp?v=6900f0527b 720w,assets/skin.webp?v=39ec9f097f 1232w" sizes="(max-width:900px) 78vw,30vw">
+<h3 class="svl">Toxina botulínica</h3>
+<p class="svx">Suavize as linhas de expressão e tenha um olhar mais leve, sem perder a naturalidade dos seus traços.</p>
+<a class="svb" href="https://wa.me/" target="_blank" rel="noopener" draggable="false" aria-label="Agendar: toxina botulínica"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.200 3H9v4.800"></path></svg></a>
+</article>
+<article class="svc">
+<img class="svi" loading="lazy" decoding="async" src="assets/fios.webp?v=6a7c81591b" alt="" draggable="false">
+<h3 class="svl">Fios de sustentação</h3>
+<p class="svx">Quer um contorno mais definido? Os fios de sustentação ajudam a dar suporte aos tecidos do rosto.</p>
+<a class="svb" href="https://wa.me/" target="_blank" rel="noopener" draggable="false" aria-label="Agendar: fios de sustentação"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.200 3H9v4.800"></path></svg></a>
+</article>
+<article class="svc">
+<img class="svi" loading="lazy" decoding="async" src="assets/celulite.webp?v=8e74236ee0" alt="" draggable="false">
+<h3 class="svl">Celulite</h3>
+<p class="svx">Sinta-se à vontade com o seu corpo outra vez, com um tratamento planejado para o que você precisa.</p>
+<a class="svb" href="https://wa.me/" target="_blank" rel="noopener" draggable="false" aria-label="Agendar: celulite"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.700" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l6-6M4.200 3H9v4.800"></path></svg></a>
+</article>
+</div>
+</div>
+</section>
 
 <section class="why" id="why">
 <svg width="0" height="0" style="position: absolute" aria-hidden="true"><defs><symbol id="stf" viewBox="0 0 12 12"><path d="M6 1.200l1.450 3.100 3.350.45-2.450 2.350.62 3.350L6 8.800l-2.970 1.650.62-3.350L1.200 4.750l3.350-.45z" fill="currentColor"></path></symbol><symbol id="st" viewBox="0 0 12 12"><path d="M6 1.200l1.450 3.100 3.350.45-2.450 2.350.62 3.350L6 8.800l-2.970 1.650.62-3.350L1.200 4.750l3.350-.45z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"></path></symbol></defs></svg>
 <div class="wa">
-<h2 class="wt"><span class="ln"><span class="li">Por que sua pele </span></span><span class="ln"><span class="li">merece o melhor </span></span></h2>
+<h2 class="wt"><span class="ln"><span class="li">Por que escolher </span></span><span class="ln"><span class="li">a Taisa Rissoli </span></span></h2>
 <div class="rate">
 <div class="ratet">
 <div class="stars"><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg></div>
@@ -77,23 +154,23 @@
 </div>
 
 <div class="wc big">
-<img class="fimg" src="assets/skin.webp" alt="Rosto de mulher com sardas, em close, apoiado em um frasco de cosmético">
+<img class="fimg" loading="lazy" decoding="async" src="assets/skin.webp?v=39ec9f097f" alt="Rosto de mulher com sardas, em close, apoiado em um frasco de cosmético" srcset="assets/skin-720.webp?v=6900f0527b 720w,assets/skin.webp?v=39ec9f097f 1232w" sizes="(max-width:900px) 50vw,55vw">
 <div class="pe">
 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.300l1.600 1.150 2-.05.6 1.900 1.600 1.200-.65 1.900.65 1.900-1.600 1.200-.6 1.900-2-.05L8 14.700l-1.600-1.150-2 .05-.6-1.900-1.600-1.200.65-1.900-.65-1.900 1.600-1.200.6-1.900 2 .05z"></path><path d="M5.500 8l1.800 1.800 3.300-3.400"></path></svg>
 <b>Cuidado <i>especializado</i></b>
-<p>Cada procedimento é planejado com <br>atenção às necessidades da sua pele.</p>
+<p>Atenção de verdade em cada etapa, com <br>um plano pensado só para a sua pele.</p>
 </div>
 </div>
 
 <div class="wc eco">
 <svg class="eci" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c.8 4.600 3.400 7.200 9 9-5.600 1.800-8.200 4.400-9 9-.8-4.600-3.400-7.200-9-9 5.600-1.800 8.200-4.400 9-9z"></path></svg>
-<h3 class="ct">Rosto<br><i>e corpo</i></h3>
-<p class="ecd">Do rejuvenescimento do rosto <br>ao tratamento de celulite, <br>em um só lugar.</p>
-<img class="ecb" src="assets/bottle-black.webp" alt="Frasco preto com válvula">
+<h3 class="ct">Tudo em<br><i>um só lugar</i></h3>
+<p class="ecd">Rosto e corpo com o mesmo <br>cuidado, sem precisar procurar <br>vários lugares.</p>
+<img class="ecb" loading="lazy" decoding="async" width="259" height="635" src="assets/bottle-black.webp?v=85b9575eaa" alt="Frasco preto com válvula">
 </div>
 
 <div class="wc nat">
-<img class="lf" src="assets/leaf.webp" alt="Folha verde">
+<img class="lf" loading="lazy" decoding="async" width="344" height="528" src="assets/leaf.webp?v=b252568ee3" alt="Folha verde">
 <h3 class="ct">Nossos<br><i>tratamentos</i></h3>
 <ul class="nl">
 <li><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.500 7.500l3 3 6-7"></path></svg>Aplicação de enzimas</li>
@@ -107,38 +184,46 @@
 
 <div class="wb"><div class="wbi">
 <figure class="wq">
-<div class="stk" aria-hidden="true"><span class="s2"></span><span class="s1"><img src="assets/bottle-black.webp" alt=""></span></div>
-<blockquote>O <i>depoimento real de uma paciente,</i> <br><i>nas palavras dela,</i> entra aqui. Troque este <br>texto por um relato autorizado.</blockquote>
-<div class="stars"><svg aria-hidden="true"><use href="#st"></use></svg><svg aria-hidden="true"><use href="#st"></use></svg><svg aria-hidden="true"><use href="#st"></use></svg><svg aria-hidden="true"><use href="#st"></use></svg><svg aria-hidden="true"><use href="#st"></use></svg></div>
-<figcaption>[Nome da paciente]<small>[Tratamento realizado]</small></figcaption>
+<div class="stk" aria-hidden="true"><span class="s2"></span><span class="s1"><img loading="lazy" decoding="async" width="259" height="635" src="assets/bottle-black.webp?v=85b9575eaa" alt=""></span></div>
+<blockquote>Você não precisa mudar quem é. <br><i>Só precisa voltar a se reconhecer</i> <br>quando se olha no espelho.</blockquote>
 </figure>
 
+<section class="wr" aria-label="Avaliações de clientes">
+<article class="rv">
+<div class="stars" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg></div>
+<p>Aqui entra o texto real da avaliação deixada no Google.</p>
+<footer class="rvf"><span class="rva" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="6" r="3"></circle><path d="M2.500 15c.5-3.500 2.800-5 5.500-5s5 1.500 5.500 5z"></path></svg></span><span class="rvn"><b>Nome da cliente</b><small>Avaliação no Google</small></span></footer>
+</article>
+<article class="rv">
+<div class="stars" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg></div>
+<p>Aqui entra o texto real da avaliação deixada no Google.</p>
+<footer class="rvf"><span class="rva" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="6" r="3"></circle><path d="M2.500 15c.5-3.500 2.800-5 5.500-5s5 1.500 5.500 5z"></path></svg></span><span class="rvn"><b>Nome da cliente</b><small>Avaliação no Google</small></span></footer>
+</article>
+<article class="rv">
+<div class="stars" role="img" aria-label="5 estrelas"><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg><svg aria-hidden="true"><use href="#stf"></use></svg></div>
+<p>Aqui entra o texto real da avaliação deixada no Google.</p>
+<footer class="rvf"><span class="rva" aria-hidden="true"><svg viewBox="0 0 16 16" fill="currentColor"><circle cx="8" cy="6" r="3"></circle><path d="M2.500 15c.5-3.500 2.800-5 5.500-5s5 1.500 5.500 5z"></path></svg></span><span class="rvn"><b>Nome da cliente</b><small>Avaliação no Google</small></span></footer>
+</article>
+</section>
+
 <div class="duo">
-<img class="duoi" src="assets/bottles.webp" alt="Frascos preto e rosé com válvula, o rosé apoiado em uma pedra">
-<div class="chips">
-<a class="pc pc1" href="#understand"><span class="th"><img src="assets/bottle-black.webp" alt=""></span><span class="pt"><small>Facial</small><b>Enzimas</b><small>Saiba mais</small></span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.500 6h9M7 2.500 10.500 6 7 9.500"></path></svg></a>
-<a class="pc pc2" href="#understand"><span class="th"><img src="assets/bottle-rose.webp" alt=""></span><span class="pt"><small>Corporal</small><b>Celulite</b><small>Saiba mais</small></span><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.500 6h9M7 2.500 10.500 6 7 9.500"></path></svg></a>
-</div>
+<img class="duoi" loading="lazy" decoding="async" width="1672" height="941" src="assets/bottles.webp?v=daf5067671" alt="Frascos preto e rosé com válvula, o rosé apoiado em uma pedra" srcset="assets/bottles-1000.webp?v=fa983a83b2 1000w,assets/bottles-640.webp?v=ecd8e46be3 640w,assets/bottles.webp?v=daf5067671 1672w" sizes="(max-width:900px) 118vw,1040px">
 </div>
 </div></div>
 </section>
 
 <section class="best" id="bestsellers">
-<img class="bbg" src="assets/bestsellers.webp" alt="Frasco de sérum, pote de hidratante e bisnaga de gel de limpeza sobre pedra, com parede marrom ao fundo">
+<img class="bbg" loading="lazy" decoding="async" width="2067" height="761" src="assets/bestsellers.webp?v=48de554360" alt="Frasco de sérum, pote de hidratante e bisnaga de gel de limpeza sobre pedra, com parede marrom ao fundo" srcset="assets/bestsellers-1280.webp?v=24a434a8a1 1280w,assets/bestsellers-828.webp?v=277f685116 828w,assets/bestsellers.webp?v=48de554360 2067w" sizes="(max-width:760px) 130vw,100vw">
 <div class="btx">
-<p class="bey">No dia a dia</p>
-<h2 class="bti"><span class="ln"><span class="li">Cuidados </span></span><span class="ln"><span class="li">essenciais </span></span><span class="ln"><span class="li"><span class="ms">para a sua</span> rotina </span></span></h2>
-<p class="ble">Simplifique sua rotina com cuidados <br>essenciais, pensados para a sua pele.</p>
-<a class="bbt" href="#understand">Ver tratamentos<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.500 6h9M7 2.500 10.500 6 7 9.500"></path></svg></a>
+<p class="bey">Sua próxima etapa</p>
+<h2 class="bti"><span class="ln"><span class="li">Comece hoje </span></span><span class="ln"><span class="li">o cuidado </span></span><span class="ln"><span class="li"><span class="ms">que você</span> merece </span></span></h2>
+<p class="ble">Agende sua avaliação na Clínica Taisa Rissoli <br>e descubra o tratamento ideal para você.</p>
+<a class="bbt" href="https://wa.me/" target="_blank" rel="noopener">Agendar minha avaliação<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.100" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1.500 6h9M7 2.500 10.500 6 7 9.500"></path></svg></a>
 </div>
 </section>
 
-
 </div>
 </div>
-<script src="js/gsap.min.js"></script>
-<script src="js/ScrollTrigger.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/motion.js"></script>
+<script src="js/main.js?v=0859d0dd33"></script>
 </body>
 </html>
